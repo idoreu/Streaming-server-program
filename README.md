@@ -32,4 +32,12 @@ get_all_movies_count(Genre genre) :
 Query for the number of all the movies of the same genre.
 Time complexity - O(1).
 
+get_all_movies(Genre genre, int ∗ const output) : 
+Query all the movies of the same genre.
+Time complexity - Linear in the number of movies of that genre.
+
+get_num_views(int userId, Genre genre) : 
+Query watching statistics of a given user in this genre.
+Time complexity - logarithmic in the number of users.
+
 
