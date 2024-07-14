@@ -4,5 +4,19 @@ The server will keep movies and information about customers and wether or not th
 
 The service's API includes the following functions:
 
-streaming_database() - initiating an empty server database
+streaming_database() :
+Initiating an empty database for the server.
+Time complexity - O(1)
+
+~streaming_database() :
+Deleting the database.
+Time complexity - linear in the number of users, movies and watch groups
+
+add_movie(int movieId, Genre genre, int views, bool vipOnly) :
+Inserts the movie to the data base and document its viewing statistics and meta data.
+Time complexity - logarithmic in the number of movies in the system
+
+add_user(int userId, bool isVip) :
+Insert a new user's information to the system.
+Time complexity - logarithmic in the number of users in the system.
 
