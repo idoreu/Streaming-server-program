@@ -1,6 +1,9 @@
 # Movie-streaming-service
 This is the first project in my Data structures course, the goal is to use data structures to efficiently manage a streaming service.
-The server will keep movies and information about customers and wether or not they are part of a watching group.
+The server will keep movies, information about users and other statistical data.
+
+I have implemented the server using mainly the AVLTree data structure, and for different objects I wanted the tree to act differently,
+therefore I have decided to make it an abstract class.
 
 The service's API includes the following functions:
 
@@ -40,4 +43,7 @@ get_num_views(int userId, Genre genre) :
 Query watching statistics of a given user in this genre.
 Time complexity - logarithmic in the number of users.
 
+get_group_recommendation(int groupId) : 
+The system recogments the group a movie to watch according to their watching statistics.
+Time complexity - Logarithmic in the number of groups.
 
