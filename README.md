@@ -20,3 +20,16 @@ add_user(int userId, bool isVip) :
 Insert a new user's information to the system.
 Time complexity - logarithmic in the number of users in the system.
 
+add_group(int groupId) :
+Creates a new watching group.
+Time complexity - logarithmic in the number of watch groups
+
+add_user_to_group(int userId, int groupId) :
+This function also check the user is only in one watch group.
+Time complexity O(log(number of users) + log(number of groups))
+
+get_all_movies_count(Genre genre) : 
+Query for the number of all the movies of the same genre.
+Time complexity - O(1).
+
+
