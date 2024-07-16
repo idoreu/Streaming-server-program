@@ -5,6 +5,8 @@ The server will keep movies, information about users and other statistical data.
 I have implemented the server using mainly the AVLTree data structure, and for different objects I wanted the tree to act differently,
 therefore I have decided to make it an abstract class.
 
+
+//__________________________________________________
 The service's API includes the following functions:
 
 streaming_database() :
